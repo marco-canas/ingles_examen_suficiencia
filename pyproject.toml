@@ -9,7 +9,7 @@ description = "LLMs in Depth — a tiny, CPU-friendly GPT built from scratch for
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Juan José" }]
+authors = [{ name = "Juanjo Barrientos" }]
 keywords = ["llm", "gpt", "transformer", "pytorch", "education", "pycon"]
 
 dependencies = [
