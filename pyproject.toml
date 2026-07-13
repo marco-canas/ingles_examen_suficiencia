@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gptlab"
+version = "0.1.0"
+description = "LLMs in Depth — a tiny, CPU-friendly GPT built from scratch for the PyCon Colombia 2026 workshop"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Juan José" }]
+keywords = ["llm", "gpt", "transformer", "pytorch", "education", "pycon"]
+
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scikit-learn>=1.3",
+    "tokenizers>=0.15",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+notebooks = ["ipykernel>=6.29", "jupyterlab>=4.0", "tiktoken>=0.6"]
+
+[tool.setuptools]
+packages = ["gptlab"]
+
+[tool.setuptools.package-data]
+gptlab = ["py.typed"]

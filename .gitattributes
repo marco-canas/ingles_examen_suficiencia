@@ -1,0 +1,9 @@
+# Normalize line endings to LF in the repo (checked out native on each OS).
+* text=auto eol=lf
+
+# Binary artifacts
+*.pt binary
+
+# Keep notebooks and data as LF text
+*.ipynb text eol=lf
+data/tinyshakespeare.txt text eol=lf
